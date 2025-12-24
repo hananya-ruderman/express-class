@@ -9,6 +9,7 @@ ruoter.route("/")
     .get(getWithHeaders, getTargetsWithParams, getTargets)
     .post(postTargets)
 
+
 ruoter.route("/:id")
     .get(getTarget)
 
@@ -18,7 +19,7 @@ ruoter.route("/intel/ping")
 ruoter.route("/:id/brief")
     .get(getSpesificDetailsById)
 
-ruoter.route("/search/:params")
+ruoter.route("/search/:search")
     .get(searchTarget)
 
 export default ruoter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
