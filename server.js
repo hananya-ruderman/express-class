@@ -3,11 +3,11 @@ import targets from './routes/targets.js'
 import dotenv from 'dotenv'
 import cors from 'cors'
 
-app.use(cors())
 dotenv.config()
 
 const PORT = process.env.PORT
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 
