@@ -1,6 +1,9 @@
 import express from "express"
 import targets from './routes/targets.js'
 import dotenv from 'dotenv'
+import cors from 'cors'
+
+app.use(cors())
 dotenv.config()
 
 const PORT = process.env.PORT
